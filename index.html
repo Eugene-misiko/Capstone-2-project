@@ -6,43 +6,42 @@
         <title>Document</title>
         <script src="https://kit.fontawesome.com/29fdaa373c.js" crossorigin="anonymous"></script>
         <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
-     </head>
-    <body class="relative flow-hiden ">
-          <video autoplay muted loop playsinline class="fixed top-0 left-0 w-full h-full object-cover z-0"> 
-            
-    <source src="assets/back.vide0.mp4" type="video/mp4"/>
-    
-          </video>
+    </head>
+        <body class="relative flow-hiden ">
+                <video autoplay muted loop playsinline class="fixed top-0 left-0 w-full h-full object-cover z-0 opacity-60"> 
+                                <source src="assets/back.vide0.mp4" type="video/mp4"/>
+                </video>
           
-        <nav class="bg-blue-400 h-15 opacity-90"> 
-            <div class="ml-6 ">
-              <i class="fa-brands fa-web-awesome fa-beat-fade fa-2xl mt-6 ml-6" style="color: #e010b3;"></i>
-              
+            <nav class="bg-blue-400 h-17 opacity-99"> 
+                <div class="ml-6 text-2xl">
+                  <i class="fa-brands fa-web-awesome fa-beat-fade fa-2xl mt-8 ml-6" style="color: #e010b3;"></i>
+                
+                </div>
+            
+            </nav>
+            <div class="container h-[400px] w-2xl  text-center mx-auto mt-30 rounded-lg flex flex-col items-center space-y-4 opacity-99 backdrop-blur-md p-2 glow-shadow transition duration-300 ease-in-out bg-white " style="background-image: url('assets/small.image.jpg'); ">
+                <h2 class="font-bold  text-cyan-400 text-3xl mt-6 text-shadow-glow">JavaScript Quiz</h2>
+                <div id="quiz">
+                    <div class="text-white text-2xl mb-[16px]" id="question">Question text</div>
+                    <div class="block w-100% bg-white hover:bg-cyan-400 h-7 rounded-lg border-[2px]" id="choices"></div>
+                    <button class="text-white bg-cyan-400 h-7 w-17 rounded-lg font-bold mt-4  cursor-pointer " id="nextBtn">Next</button>
+                </div>
+                <div class="text-2xl mt-base text-white mt-base text-shadow-glow" id="result"></div>
+                <button class="hidden text-white bg-cyan-400 h-7 w-24 mt-4 cursor-pointer rounded-lg" id="restartBtn">Restart Quiz</button>
+                <div class="mt-base font-bold text-2xl text-white text-shadow-md" id="timer">Time Left: <span id="time">30</span>s</div>
             </div>
-        
-        </nav>
-        <div class="container h-150 w-2xl  text-center mx-auto mt-30 rounded-lg flex flex-col items-center space-y-4 opacity-90" style="background-image: url('assets/small.image.jpg'); ">
-            <h2 class="font-bold  text-blue-300 text-3xl">JavaScript Quiz</h2>
-            <p class="font-bold mt-2 text-white">What does html stand for?</p>
-            <input type="text" class="border border-blue-300 p-3 border-4  rounded-md bg-white mt-4 w-100 ">
-            <input type="text" class="border border-blue-300 p-3 border-4 rounded-md bg-white mt-4 w-100">
-            <input type="text" class="border border-blue-300 p-3 border-4 rounded-md bg-white mt-4 w-100">
-            <input type="text" class="border border-blue-300 p-3 border-4 rounded-md bg-white mt-4 w-100">
-            <button class=" bg-blue-500 h-10 w-20 rounded-lg mt-6 text-center text-2xl text-white cursor-pointer">Next</button>
-        </div>
-        
-        <footer class="bg-blue-400 h-50 mt-60 opacity-90">
-            <p class="text-white text-2xl text-center ">If you want more games follow us on:</p>
-            <div class="flex justify-center space-x-3">
-            <i class="fa-brands fa-facebook-f fa-beat fa-2xl cursor-pointer mt-15"></i>
-            <i class="fa-brands fa-instagram fa-beat fa-2xl cursor-pointer mt-15"></i>
-            <i class="fa-brands fa-square-linkedin fa-beat fa-2xl cursor-pointer mt-15"></i>
-            <i class="fa-brands fa-square-twitter fa-beat fa-2xl cursor-pointer mt-15"></i>
-            </div>
-            <p class="text-center mt-10 text-2xl text-white">For more information call: <span class="text-black underline cursor-pointer">+25412345678</span>
-                <i class="fa-solid fa-phone-volume fa-shake fa-xl text-black cursor-pointer"></i>
-            </p>
-        </footer>
-      
-    </body>
+            <footer class="bg-blue-400 h-50 mt-60 opacity-99">
+                <p class="text-white text-2xl text-center ">If you want more games follow us on:</p>
+                <div class="flex justify-center space-x-3">
+                <a href="https://www.facebook.com/"><i class="fa-brands fa-facebook-f fa-beat fa-2xl cursor-pointer mt-15"></i></a>
+                <a href="https://www.instagram.com/"><i class="fa-brands fa-instagram fa-beat fa-2xl cursor-pointer mt-15"></i></a>
+                <a href="https://ke.linkedin.com/"><i class="fa-brands fa-square-linkedin fa-beat fa-2xl cursor-pointer mt-15"></i></a>
+                <a href="https://www.twitter.com/"><i class="fa-brands fa-square-twitter fa-beat fa-2xl cursor-pointer mt-15"></i></a>
+                </div>
+                <p class="text-center mt-10 text-2xl text-white">For more information call: <span class="text-black underline cursor-pointer">+25412345678</span>
+                    <i class="fa-solid fa-phone-volume fa-shake fa-xl text-black cursor-pointer"></i>
+                </p>
+            </footer>
+            <script src="script.js"></script>
+        </body>
 </html>
