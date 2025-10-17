@@ -1,0 +1,3 @@
+Javascript quiz
+Tailwind styling,fontawesome for animations,
+Javascript,if loop,timer,functions...
