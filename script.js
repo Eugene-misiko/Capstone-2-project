@@ -96,4 +96,22 @@ function nextQuestion() {
     endQuiz();
   }
 }
+
+
+
+function startTimer() {
+  timeEl.textContent = timeLeft;
+
+  timer = setInterval(() => {
+    timeLeft--;
+    timeEl.textContent = timeLeft;
+
+    if (timeLeft <= 0) {
+      clearInterval(timer);
+      endQuiz();
+    }
+  }, 1000);
+}
+
+
 startQuiz();
