@@ -112,6 +112,13 @@ function startTimer() {
     }
   }, 1000);
 }
+function endQuiz(){
+  clearInterval(timer);
+  quizContainer.classList.add("hidden");
+  resultEl.textContent = `You scored ${score} out of ${quizData.length}!`;
+  resultEl.classList.remove("hidden");
+  restartBtn.classList.remove("hidden")
+}
 
 
 startQuiz();
