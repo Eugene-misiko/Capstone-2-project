@@ -117,7 +117,7 @@ function endQuiz(){
   quizContainer.classList.add("hidden");
   resultEl.textContent = `You scored ${score} out of ${quizData.length}!`;
   resultEl.classList.remove("hidden");
-  restartBtn.classList.remove("hidden")
+  restartBtn.classList.remove("hidden");
 }
 
 
