@@ -1,7 +1,7 @@
 const quizData = [
     {
         question: "Which language runs in a web browser?",
-        choices: ["Java", "C", "Python"],
+        choices: ["Javascript", "C", "Python"],
         correct: "Javascript",
     },
     {
@@ -58,12 +58,13 @@ function showQuestion() {
     questionEl.textContent = q.question;
 
     choicesEl.innerHTML = "";
+
     q.choices.forEach((choice) => {
         const btn = document.createElement("button");
         btn.textContent = choice;
         btn.addEventListener("click", () => selectAnswer(btn, q.correct));
         choicesEl.appendChild(btn)
-    })
+    });
 }
 
 
@@ -112,6 +113,7 @@ function startTimer() {
     }
   }, 1000);
 }
+
 function endQuiz(){
   clearInterval(timer);
   quizContainer.classList.add("hidden");
@@ -128,10 +130,8 @@ restartBtn.addEventListener("click", () => {
   timeLeft = 30;
   resultEl.classList.add("hidden");
   restartBtn.classList.add("hidden");
-  quizContainer.classList.add("hidden");
+  quizContainer.classList.remove("hidden");
   timeEl.textContent = timeLeft;
   startQuiz();
 });
-
-
 startQuiz();
