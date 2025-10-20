@@ -120,5 +120,18 @@ function endQuiz(){
   restartBtn.classList.remove("hidden");
 }
 
+nextBtn.addEventListener("click", nextQuestion);
+
+restartBtn.addEventListener("click", () => {
+  currentQuestion = 0;
+  score = 0;
+  timeLeft = 30;
+  resultEl.classList.add("hidden");
+  restartBtn.classList.add("hidden");
+  quizContainer.classList.add("hidden");
+  timeEl.textContent = timeLeft;
+  startQuiz();
+});
+
 
 startQuiz();
