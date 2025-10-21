@@ -45,6 +45,7 @@ const resultEl = document.getElementById("result");
 const timeEl = document.getElementById("timer");
 const restartBtn = document.getElementById("restartBtn");
 const quizContainer = document.getElementById("quiz");
+const resetBtn = document.getElementById("resetBtn")
 
 function startQuiz() {
     showQuestion();
@@ -74,10 +75,10 @@ function selectAnswer(button, correctAnswer) {
   Array.from(choicesEl.children).forEach((btn) => {
     btn.disabled = true;
     if (btn.textContent === correctAnswer) {
-      btn.style.borderColor = "#00ffcc";
+      btn.style.backgroundColor = "#00ffcc";
     }
     if (btn.textContent === selected && selected !== correctAnswer) {
-      btn.style.borderColor = "#ff4d4d";
+      btn.style.backgroundColor = "#ff4d4d";
     }
   });
 
@@ -134,4 +135,5 @@ restartBtn.addEventListener("click", () => {
   timeEl.textContent = timeLeft;
   startQuiz();
 });
+//Start on page load
 startQuiz();
